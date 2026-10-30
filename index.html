@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoKG — Сделаем Кыргызстан чище вместе</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="#home"><span class="mark">🍃</span><span><b>EcoKG</b><small>СДЕЛАЕМ КЫРГЫЗСТАН ЧИЩЕ</small></span></a>
+  <button id="burger" aria-label="Меню">☰</button>
+  <nav id="nav"></nav>
+  <div class="tools">
+    <button id="bell" class="ic" title="Напоминания">🔔</button>
+    <a class="btn" href="#report">＋ Сообщить</a>
+    <div class="avwrap"><button id="avatar" class="av">Ж</button>
+      <div id="avmenu" class="hidden"><a href="#cabinet">Личный кабинет</a><a href="#organizer">Кабинет организатора</a><a href="#stats">Статистика и отчёт</a></div></div>
+  </div>
+</header>
+<main id="app"></main>
+<footer>EcoKG · Дипломный проект · Данные на сайте демонстрационные и не являются реальными экологическими результатами.</footer>
+<div id="toast"></div>
+<div id="modal" class="hidden"><div class="box" id="modalBox"></div></div>
+<button id="botBtn" title="ИИ-помощник">🤖</button>
+<div id="bot" class="hidden">
+  <div class="botHead">ИИ-помощник EcoKG <span id="botClose">✕</span></div>
+  <div id="botLog"></div>
+  <form id="botForm"><input id="botIn" placeholder="Спросите про уборку, деревья, отчёт…" autocomplete="off"><button>➤</button></form>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
